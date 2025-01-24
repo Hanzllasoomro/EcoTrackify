@@ -1,11 +1,4 @@
----environment setup ---
-python -m venv myenv
-source myenv/bin/activate  # Or myenv\Scripts\activate on Windows
-pip install -r requirements.txt  # Optional
-python path/to/your/file.py
-
 streamlit
-
-pip install matplotlib
-
-To start engine --- streamlit run app.py
+matplotlib
+pandas
+numpy
