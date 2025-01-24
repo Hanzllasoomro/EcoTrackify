@@ -8,7 +8,16 @@ from footer import display_footer
 
 # Page Setup
 st.set_page_config(layout="wide", page_title="EcoTrackify", page_icon="🌍")
-
+st.markdown(
+    """
+    <style>
+        html, body, [data-testid="stAppViewContainer"] {
+            background-color: #A5D6A7   ; 
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 # Header
 st.markdown(
     """
@@ -54,7 +63,7 @@ if st.button("Calculate CO2 emissions"):
     per_capita = PER_CAPITA_EMISSIONS[country]
     st.warning(
         f"CO2 emissions per capita in {country} are {per_capita} tonnes per person. "
-        f"Your emissions are {round((total / per_capita) * 100, 2)}% of the average."
+        f"Your emissions are {round((total / per_capita) * 100, 2)}% of the per capita average."
     )
 
     # Visualization

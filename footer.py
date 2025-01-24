@@ -9,7 +9,7 @@ def display_footer():
             footer {
                 text-align: center;
                 font-size: 0.9em;
-                color: #95a5a6;
+                color: #black;
                 margin-top: 30px;
             }
             footer a {
