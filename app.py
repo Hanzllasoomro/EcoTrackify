@@ -2,6 +2,7 @@ import streamlit as st
 from inputs import get_user_inputs
 from calculations import calculate_emissions, calculate_rewards_and_challenges
 from visualizations import plot_emissions_pie
+from suggestions import get_suggestions
 from config import PER_CAPITA_EMISSIONS
 from footer import display_footer
 
@@ -59,6 +60,14 @@ if st.button("Calculate CO2 emissions"):
     # Visualization
     plot_emissions_pie(transportation, electricity, waste, diet)
 
+    # Suggestions
+    suggestions = get_suggestions(total, transportation, electricity, waste, diet)
+
+    if suggestions:
+        st.subheader("💡 Actionable Suggestions to Reduce Your Carbon Footprint:")
+        for suggestion in suggestions:
+            st.markdown(f"- {suggestion}")
+
     # Rewards and Challenges
     challenges, rewards, badges = calculate_rewards_and_challenges(
         transportation, electricity, waste, diet, total
@@ -70,11 +79,11 @@ if st.button("Calculate CO2 emissions"):
             st.write(f"- {challenge}")
 
     if rewards > 0:
-        st.subheader("Rewards")
+        st.subheader("🏆 Your Rewards")
         st.write(f"You've earned {rewards} points!")
 
     if badges:
-        st.subheader("Badges")
+        st.subheader("🎖️ Your Badges")
         for badge in badges:
             st.write(f"- {badge}")
 
