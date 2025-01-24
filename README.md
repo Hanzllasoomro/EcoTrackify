@@ -1,5 +1,5 @@
-🌍 Personal Carbon Tracker App
-This project is a Personal Carbon Tracking App designed to help users calculate, visualize, and reduce their carbon footprint. By focusing on key lifestyle areas such as transportation, electricity consumption, diet, and waste management, the app provides insights and actionable data to promote sustainable living.
+🌍 EcoTrackify App
+This project is a EcoTrackify App designed to help users calculate, visualize, and reduce their carbon footprint. By focusing on key lifestyle areas such as transportation, electricity consumption, diet, and waste management, the app provides insights and actionable data to promote sustainable living.
 
 🚀 Features
 Country-Specific Emission Factors: Calculate emissions based on localized data for 20+ countries, including Pakistan, USA, UK, India, and more.
@@ -41,21 +41,12 @@ Track & Improve: Use the insights to make informed decisions to reduce your foot
 The app aims to empower individuals to take responsibility for their carbon footprint and make sustainable lifestyle changes, contributing to a greener planet.
 
 🔗 Getting Started
-Clone this repository:
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/carbon-tracker-app.git
 Install required dependencies:
-bash
-Copy
-Edit
 pip install -r requirements.txt
+
 Run the app:
-bash
-Copy
-Edit
 streamlit run app.py
+
 🤝 Contributing
 Contributions are welcome! Feel free to fork this repository, submit issues, or create pull requests to improve the app.
 
