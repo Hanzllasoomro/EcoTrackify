@@ -1,0 +1,4 @@
+_pycache_/
+.venv/
+eco_data.db
+main.py
