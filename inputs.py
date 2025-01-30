@@ -14,7 +14,7 @@ def get_user_inputs():
     
     col1, col2 = st.columns(2)
     with col1:
-        distance = st.slider("🚗 Daily commenced distance", 0.0, 5000.0)
+        distance = st.slider("🚗 Daily commenced distance (in km)", 0.0, 5000.0)
         electricity = st.slider("💡 Electricity consumption per Day (in kWh)", 0.0, 1000.0)
     with col2:
         waste = st.slider("🚮 Waste generated per Day (in kg)", 0.0, 100.0)
